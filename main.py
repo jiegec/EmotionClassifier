@@ -171,7 +171,7 @@ class RNNV1(nn.Module):
         return x
 
 #model = CNNV1()
-model = RNNV1()
+model = CNNV1()
 criterion = nn.CrossEntropyLoss().to(device)
 #criterion = nn.CrossEntropyLoss(weight=torch.tensor(max_vote_count, dtype=torch.float)).to(device)
 #optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
@@ -204,8 +204,8 @@ def print_accuracy():
     # on test set
     correct = 0
     wrong = 0
-    truth = [0] * num_emotions
-    pred = [0] * num_emotions
+    truth = []
+    pred = []
     convs = []
     for data in test_data:
         inputs, labels = data
@@ -214,8 +214,8 @@ def print_accuracy():
         input_ans = np.argmax(list(labels))
         output_ans = np.argmax(list(outputs))
 
-        truth[input_ans] += 1
-        pred[output_ans] += 1
+        truth.append(input_ans)
+        pred.append(output_ans)
 
         convs.append(pearsonr(np.array(list(labels), dtype=np.float), np.array(list(outputs), dtype=np.float)))
 
@@ -228,10 +228,12 @@ def print_accuracy():
     print('test correct/all: %d/%d=%.2f' % (correct, correct + wrong, correct / (correct + wrong)))
     print('test f-score: macro: %.2f micro: %.2f weighted: %.2f, conv: %.2f' % (f1_score(truth, pred, average='macro'), f1_score(truth, pred, average='micro'), f1_score(truth, pred, average='weighted'), np.mean(convs)))
 
+    sys.stdout.flush()
+
 
 print("before training")
 print_accuracy()
-for epoch in range(100):
+for epoch in range(1000):
     total_loss = 0.0
     for data in batch_input_data:
         inputs, labels = data
