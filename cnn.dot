@@ -1,0 +1,110 @@
+digraph {
+	graph [size="14.549999999999999,14.549999999999999"]
+	node [align=left fontsize=12 height=0.2 ranksep=0.1 shape=box style=filled]
+	4814448232 [label=SelectBackward fillcolor=darkolivegreen1]
+	4814448288 -> 4814448232
+	4814448288 [label=AddmmBackward]
+	4814448400 -> 4814448288
+	4814448400 [label="linear.bias
+ (8)" fillcolor=lightblue]
+	4814448456 -> 4814448288
+	4814448456 [label=ViewBackward]
+	4814448624 -> 4814448456
+	4814448624 [label=ReluBackward0]
+	4814448736 -> 4814448624
+	4814448736 [label=MulBackward0]
+	4814448848 -> 4814448736
+	4814448848 [label=CatBackward]
+	4814448960 -> 4814448848
+	4814448960 [label=ReluBackward0]
+	4814449184 -> 4814448960
+	4814449184 [label=SqueezeBackward1]
+	4814449352 -> 4814449184
+	4814449352 [label=MaxPool2DWithIndicesBackward]
+	4814449520 -> 4814449352
+	4814449520 [label=UnsqueezeBackward0]
+	4814449688 -> 4814449520
+	4814449688 [label=ReluBackward0]
+	4814449856 -> 4814449688
+	4814449856 [label=SqueezeBackward1]
+	4814450024 -> 4814449856
+	4814450024 [label=MkldnnConvolutionBackward]
+	4814450192 -> 4814450024
+	4814450192 [label=UnsqueezeBackward0]
+	4814450416 -> 4814450192
+	4814450416 [label=CloneBackward]
+	4814450584 -> 4814450416
+	4814450584 [label=PermuteBackward]
+	4814508160 -> 4814450584
+	4814508160 [label=EmbeddingBackward]
+	4814508328 -> 4814508160
+	4814508328 [label="embedding.weight
+ (752, 256)" fillcolor=lightblue]
+	4814450248 -> 4814450024
+	4814450248 [label=UnsqueezeBackward0]
+	4814450472 -> 4814450248
+	4814450472 [label="conv1.weight
+ (64, 256, 20)" fillcolor=lightblue]
+	4814450304 -> 4814450024
+	4814450304 [label="conv1.bias
+ (64)" fillcolor=lightblue]
+	4814449016 -> 4814448848
+	4814449016 [label=ReluBackward0]
+	4814449240 -> 4814449016
+	4814449240 [label=SqueezeBackward1]
+	4814449576 -> 4814449240
+	4814449576 [label=MaxPool2DWithIndicesBackward]
+	4814449912 -> 4814449576
+	4814449912 [label=UnsqueezeBackward0]
+	4814450360 -> 4814449912
+	4814450360 [label=ReluBackward0]
+	4814508384 -> 4814450360
+	4814508384 [label=SqueezeBackward1]
+	4814508608 -> 4814508384
+	4814508608 [label=MkldnnConvolutionBackward]
+	4814508496 -> 4814508608
+	4814508496 [label=UnsqueezeBackward0]
+	4814508832 -> 4814508496
+	4814508832 [label=CloneBackward]
+	4814450584 -> 4814508832
+	4814508664 -> 4814508608
+	4814508664 [label=UnsqueezeBackward0]
+	4814508888 -> 4814508664
+	4814508888 [label="conv2.weight
+ (64, 256, 10)" fillcolor=lightblue]
+	4814508720 -> 4814508608
+	4814508720 [label="conv2.bias
+ (64)" fillcolor=lightblue]
+	4814449072 -> 4814448848
+	4814449072 [label=ReluBackward0]
+	4814449408 -> 4814449072
+	4814449408 [label=SqueezeBackward1]
+	4814450080 -> 4814449408
+	4814450080 [label=MaxPool2DWithIndicesBackward]
+	4814508552 -> 4814450080
+	4814508552 [label=UnsqueezeBackward0]
+	4814508776 -> 4814508552
+	4814508776 [label=ReluBackward0]
+	4814509056 -> 4814508776
+	4814509056 [label=SqueezeBackward1]
+	4814509168 -> 4814509056
+	4814509168 [label=MkldnnConvolutionBackward]
+	4814509224 -> 4814509168
+	4814509224 [label=UnsqueezeBackward0]
+	4814509448 -> 4814509224
+	4814509448 [label=CloneBackward]
+	4814450584 -> 4814509448
+	4814509280 -> 4814509168
+	4814509280 [label=UnsqueezeBackward0]
+	4814509504 -> 4814509280
+	4814509504 [label="conv3.weight
+ (64, 256, 5)" fillcolor=lightblue]
+	4814509336 -> 4814509168
+	4814509336 [label="conv3.bias
+ (64)" fillcolor=lightblue]
+	4814448512 -> 4814448288
+	4814448512 [label=TBackward]
+	4814448680 -> 4814448512
+	4814448680 [label="linear.weight
+ (8, 24384)" fillcolor=lightblue]
+}

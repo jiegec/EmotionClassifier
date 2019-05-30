@@ -1,0 +1,599 @@
+got 2342 news and 44979 words
+before training
+train correct/all: 153/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [204, 1706, 222, 0, 13, 52, 92, 53]
+test correct/all: 120/2228=0.05
+test f-score: macro: 0.05 micro: 0.05 weighted: 0.03, conv: 0.02
+epoch 0 loss 20.061
+train correct/all: 985/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [1, 0, 0, 2341, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.35
+epoch 1 loss 17.826
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.36
+epoch 2 loss 16.881
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 3 loss 16.662
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 4 loss 16.555
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 5 loss 16.448
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 6 loss 16.366
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 7 loss 16.284
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 8 loss 16.211
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 9 loss 16.112
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 10 loss 16.020
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 11 loss 15.900
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 12 loss 15.782
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 13 loss 15.651
+train correct/all: 984/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [0, 0, 0, 2342, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 14 loss 15.522
+train correct/all: 985/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [1, 0, 0, 2341, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 15 loss 15.352
+train correct/all: 985/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [1, 0, 0, 2341, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 16 loss 15.185
+train correct/all: 986/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [2, 0, 0, 2340, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 17 loss 14.989
+train correct/all: 988/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [4, 0, 0, 2338, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 18 loss 14.742
+train correct/all: 994/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [10, 0, 0, 2332, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 19 loss 14.472
+train correct/all: 1027/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [43, 0, 0, 2299, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 20 loss 14.175
+train correct/all: 1060/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [76, 0, 0, 2266, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 21 loss 13.818
+train correct/all: 1105/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [124, 0, 0, 2218, 0, 0, 0, 0]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 22 loss 13.434
+train correct/all: 1156/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [207, 0, 0, 2131, 3, 1, 0, 0]
+test correct/all: 1069/2228=0.48
+test f-score: macro: 0.08 micro: 0.48 weighted: 0.31, conv: 0.37
+epoch 23 loss 13.002
+train correct/all: 1238/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [320, 0, 0, 1956, 65, 1, 0, 0]
+test correct/all: 1099/2228=0.49
+test f-score: macro: 0.11 micro: 0.49 weighted: 0.34, conv: 0.38
+epoch 24 loss 12.565
+train correct/all: 1330/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [437, 1, 0, 1689, 214, 1, 0, 0]
+test correct/all: 1144/2228=0.51
+test f-score: macro: 0.14 micro: 0.51 weighted: 0.39, conv: 0.38
+epoch 25 loss 12.106
+train correct/all: 1399/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [519, 2, 0, 1518, 300, 3, 0, 0]
+test correct/all: 1193/2228=0.54
+test f-score: macro: 0.16 micro: 0.54 weighted: 0.43, conv: 0.38
+epoch 26 loss 11.653
+train correct/all: 1443/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [562, 3, 0, 1416, 357, 4, 0, 0]
+test correct/all: 1214/2228=0.54
+test f-score: macro: 0.18 micro: 0.54 weighted: 0.45, conv: 0.38
+epoch 27 loss 11.201
+train correct/all: 1471/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [591, 4, 0, 1341, 402, 4, 0, 0]
+test correct/all: 1229/2228=0.55
+test f-score: macro: 0.19 micro: 0.55 weighted: 0.46, conv: 0.38
+epoch 28 loss 10.738
+train correct/all: 1512/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [615, 4, 0, 1292, 425, 6, 0, 0]
+test correct/all: 1226/2228=0.55
+test f-score: macro: 0.19 micro: 0.55 weighted: 0.47, conv: 0.38
+epoch 29 loss 10.297
+train correct/all: 1547/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [625, 7, 0, 1242, 460, 8, 0, 0]
+test correct/all: 1222/2228=0.55
+test f-score: macro: 0.19 micro: 0.55 weighted: 0.47, conv: 0.38
+epoch 30 loss 9.857
+train correct/all: 1570/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [635, 8, 0, 1203, 486, 9, 1, 0]
+test correct/all: 1217/2228=0.55
+test f-score: macro: 0.19 micro: 0.55 weighted: 0.47, conv: 0.38
+epoch 31 loss 9.414
+train correct/all: 1611/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [639, 11, 0, 1164, 518, 9, 1, 0]
+test correct/all: 1217/2228=0.55
+test f-score: macro: 0.19 micro: 0.55 weighted: 0.47, conv: 0.38
+epoch 32 loss 8.992
+train correct/all: 1641/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [620, 16, 1, 1128, 564, 12, 1, 0]
+test correct/all: 1207/2228=0.54
+test f-score: macro: 0.19 micro: 0.54 weighted: 0.47, conv: 0.38
+epoch 33 loss 8.569
+train correct/all: 1697/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [629, 16, 5, 1104, 553, 14, 21, 0]
+test correct/all: 1198/2228=0.54
+test f-score: macro: 0.19 micro: 0.54 weighted: 0.47, conv: 0.38
+epoch 34 loss 8.172
+train correct/all: 1754/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [615, 15, 13, 1079, 557, 26, 37, 0]
+test correct/all: 1201/2228=0.54
+test f-score: macro: 0.20 micro: 0.54 weighted: 0.47, conv: 0.38
+epoch 35 loss 7.735
+train correct/all: 1803/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [612, 17, 20, 1052, 548, 34, 59, 0]
+test correct/all: 1200/2228=0.54
+test f-score: macro: 0.20 micro: 0.54 weighted: 0.47, conv: 0.38
+epoch 36 loss 7.335
+train correct/all: 1863/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [581, 24, 44, 1044, 518, 49, 82, 0]
+test correct/all: 1196/2228=0.54
+test f-score: macro: 0.21 micro: 0.54 weighted: 0.48, conv: 0.38
+epoch 37 loss 6.951
+train correct/all: 1949/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [536, 32, 47, 1024, 525, 83, 95, 0]
+test correct/all: 1187/2228=0.53
+test f-score: macro: 0.21 micro: 0.53 weighted: 0.48, conv: 0.38
+epoch 38 loss 6.544
+train correct/all: 1997/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [518, 44, 62, 1014, 512, 89, 103, 0]
+test correct/all: 1201/2228=0.54
+test f-score: macro: 0.22 micro: 0.54 weighted: 0.48, conv: 0.38
+epoch 39 loss 6.203
+train correct/all: 2051/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [491, 54, 81, 999, 494, 109, 114, 0]
+test correct/all: 1199/2228=0.54
+test f-score: macro: 0.23 micro: 0.54 weighted: 0.49, conv: 0.38
+epoch 40 loss 5.841
+train correct/all: 2093/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [462, 70, 78, 993, 489, 126, 124, 0]
+test correct/all: 1198/2228=0.54
+test f-score: macro: 0.23 micro: 0.54 weighted: 0.49, conv: 0.38
+epoch 41 loss 5.494
+train correct/all: 2128/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [447, 80, 91, 990, 469, 140, 125, 0]
+test correct/all: 1187/2228=0.53
+test f-score: macro: 0.23 micro: 0.53 weighted: 0.48, conv: 0.37
+epoch 42 loss 5.166
+train correct/all: 2155/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [440, 86, 99, 987, 465, 146, 119, 0]
+test correct/all: 1190/2228=0.53
+test f-score: macro: 0.24 micro: 0.53 weighted: 0.49, conv: 0.37
+epoch 43 loss 4.846
+train correct/all: 2168/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [431, 89, 102, 981, 458, 153, 128, 0]
+test correct/all: 1174/2228=0.53
+test f-score: macro: 0.23 micro: 0.53 weighted: 0.49, conv: 0.37
+epoch 44 loss 4.515
+train correct/all: 2189/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [432, 92, 117, 983, 440, 155, 123, 0]
+test correct/all: 1181/2228=0.53
+test f-score: macro: 0.25 micro: 0.53 weighted: 0.49, conv: 0.37
+epoch 45 loss 4.232
+train correct/all: 2205/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [423, 97, 118, 984, 431, 165, 124, 0]
+test correct/all: 1171/2228=0.53
+test f-score: macro: 0.25 micro: 0.53 weighted: 0.49, conv: 0.37
+epoch 46 loss 3.958
+train correct/all: 2218/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [422, 96, 119, 984, 431, 170, 120, 0]
+test correct/all: 1168/2228=0.52
+test f-score: macro: 0.25 micro: 0.52 weighted: 0.49, conv: 0.37
+epoch 47 loss 3.691
+train correct/all: 2238/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [421, 103, 132, 981, 415, 175, 115, 0]
+test correct/all: 1156/2228=0.52
+test f-score: macro: 0.26 micro: 0.52 weighted: 0.49, conv: 0.37
+epoch 48 loss 3.458
+train correct/all: 2246/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [427, 103, 133, 979, 413, 176, 111, 0]
+test correct/all: 1173/2228=0.53
+test f-score: macro: 0.27 micro: 0.53 weighted: 0.50, conv: 0.36
+epoch 49 loss 3.218
+train correct/all: 2251/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [419, 106, 133, 983, 406, 180, 115, 0]
+test correct/all: 1170/2228=0.53
+test f-score: macro: 0.27 micro: 0.53 weighted: 0.50, conv: 0.36
+epoch 50 loss 3.021
+train correct/all: 2266/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [421, 108, 137, 981, 399, 185, 111, 0]
+test correct/all: 1164/2228=0.52
+test f-score: macro: 0.27 micro: 0.52 weighted: 0.50, conv: 0.36
+epoch 51 loss 2.801
+train correct/all: 2279/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [420, 111, 141, 984, 389, 187, 109, 1]
+test correct/all: 1139/2228=0.51
+test f-score: macro: 0.27 micro: 0.51 weighted: 0.50, conv: 0.36
+epoch 52 loss 2.615
+train correct/all: 2282/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 113, 140, 982, 391, 191, 106, 3]
+test correct/all: 1161/2228=0.52
+test f-score: macro: 0.27 micro: 0.52 weighted: 0.51, conv: 0.36
+epoch 53 loss 2.459
+train correct/all: 2287/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [415, 114, 144, 981, 384, 193, 108, 3]
+test correct/all: 1126/2228=0.51
+test f-score: macro: 0.27 micro: 0.51 weighted: 0.50, conv: 0.36
+epoch 54 loss 2.286
+train correct/all: 2299/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 115, 145, 982, 383, 191, 103, 7]
+test correct/all: 1151/2228=0.52
+test f-score: macro: 0.28 micro: 0.52 weighted: 0.51, conv: 0.36
+epoch 55 loss 2.119
+train correct/all: 2303/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [414, 118, 144, 983, 383, 191, 102, 7]
+test correct/all: 1123/2228=0.50
+test f-score: macro: 0.27 micro: 0.50 weighted: 0.50, conv: 0.36
+epoch 56 loss 2.024
+train correct/all: 2307/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [418, 119, 148, 982, 377, 188, 102, 8]
+test correct/all: 1131/2228=0.51
+test f-score: macro: 0.28 micro: 0.51 weighted: 0.50, conv: 0.36
+epoch 57 loss 1.862
+train correct/all: 2309/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [417, 120, 145, 980, 377, 193, 101, 9]
+test correct/all: 1106/2228=0.50
+test f-score: macro: 0.28 micro: 0.50 weighted: 0.50, conv: 0.36
+epoch 58 loss 1.732
+train correct/all: 2312/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 117, 145, 981, 378, 189, 103, 13]
+test correct/all: 1124/2228=0.50
+test f-score: macro: 0.28 micro: 0.50 weighted: 0.50, conv: 0.36
+epoch 59 loss 1.624
+train correct/all: 2316/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [418, 118, 147, 981, 374, 190, 100, 14]
+test correct/all: 1117/2228=0.50
+test f-score: macro: 0.27 micro: 0.50 weighted: 0.50, conv: 0.36
+epoch 60 loss 1.526
+train correct/all: 2318/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 118, 148, 981, 373, 191, 100, 15]
+test correct/all: 1117/2228=0.50
+test f-score: macro: 0.28 micro: 0.50 weighted: 0.50, conv: 0.36
+epoch 61 loss 1.460
+train correct/all: 2320/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 120, 149, 982, 372, 186, 101, 16]
+test correct/all: 1111/2228=0.50
+test f-score: macro: 0.27 micro: 0.50 weighted: 0.50, conv: 0.36
+epoch 62 loss 1.349
+train correct/all: 2323/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [417, 121, 147, 982, 373, 184, 101, 17]
+test correct/all: 1114/2228=0.50
+test f-score: macro: 0.27 micro: 0.50 weighted: 0.50, conv: 0.36
+epoch 63 loss 1.247
+train correct/all: 2325/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 120, 147, 982, 372, 186, 101, 18]
+test correct/all: 1120/2228=0.50
+test f-score: macro: 0.28 micro: 0.50 weighted: 0.50, conv: 0.35
+epoch 64 loss 1.180
+train correct/all: 2326/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [417, 121, 146, 981, 373, 184, 101, 19]
+test correct/all: 1116/2228=0.50
+test f-score: macro: 0.28 micro: 0.50 weighted: 0.50, conv: 0.35
+epoch 65 loss 1.106
+train correct/all: 2326/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 120, 147, 982, 370, 188, 100, 19]
+test correct/all: 1095/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 66 loss 1.042
+train correct/all: 2328/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 148, 981, 371, 185, 100, 19]
+test correct/all: 1096/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 67 loss 0.971
+train correct/all: 2329/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 121, 147, 981, 372, 183, 101, 21]
+test correct/all: 1094/2228=0.49
+test f-score: macro: 0.26 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 68 loss 0.936
+train correct/all: 2327/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 121, 146, 981, 373, 184, 101, 20]
+test correct/all: 1088/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 69 loss 0.862
+train correct/all: 2331/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 124, 146, 981, 370, 184, 99, 22]
+test correct/all: 1095/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 70 loss 0.817
+train correct/all: 2331/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 121, 146, 981, 372, 184, 100, 22]
+test correct/all: 1101/2228=0.49
+test f-score: macro: 0.28 micro: 0.49 weighted: 0.50, conv: 0.35
+epoch 71 loss 0.779
+train correct/all: 2328/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [415, 121, 145, 981, 371, 185, 103, 21]
+test correct/all: 1116/2228=0.50
+test f-score: macro: 0.28 micro: 0.50 weighted: 0.50, conv: 0.35
+epoch 72 loss 0.743
+train correct/all: 2331/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 146, 981, 370, 185, 99, 22]
+test correct/all: 1092/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 73 loss 0.698
+train correct/all: 2331/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 120, 146, 981, 371, 184, 101, 23]
+test correct/all: 1104/2228=0.50
+test f-score: macro: 0.27 micro: 0.50 weighted: 0.50, conv: 0.35
+epoch 74 loss 0.660
+train correct/all: 2332/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 144, 981, 371, 183, 102, 23]
+test correct/all: 1081/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 75 loss 0.622
+train correct/all: 2333/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 147, 981, 370, 183, 100, 23]
+test correct/all: 1100/2228=0.49
+test f-score: macro: 0.28 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 76 loss 0.592
+train correct/all: 2333/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 145, 981, 370, 182, 102, 24]
+test correct/all: 1070/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 77 loss 0.573
+train correct/all: 2333/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 146, 981, 370, 183, 101, 23]
+test correct/all: 1101/2228=0.49
+test f-score: macro: 0.28 micro: 0.49 weighted: 0.50, conv: 0.35
+epoch 78 loss 0.537
+train correct/all: 2331/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 981, 370, 183, 101, 23]
+test correct/all: 1079/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 79 loss 0.510
+train correct/all: 2335/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 981, 370, 183, 100, 24]
+test correct/all: 1071/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 80 loss 0.494
+train correct/all: 2334/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [417, 123, 145, 981, 370, 182, 101, 23]
+test correct/all: 1084/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 81 loss 0.460
+train correct/all: 2335/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [415, 123, 145, 982, 369, 184, 100, 24]
+test correct/all: 1105/2228=0.50
+test f-score: macro: 0.28 micro: 0.50 weighted: 0.50, conv: 0.35
+epoch 82 loss 0.450
+train correct/all: 2333/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 981, 370, 183, 100, 24]
+test correct/all: 1077/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 83 loss 0.424
+train correct/all: 2335/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 145, 982, 369, 183, 101, 24]
+test correct/all: 1071/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 84 loss 0.416
+train correct/all: 2336/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 982, 369, 183, 100, 24]
+test correct/all: 1098/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.50, conv: 0.35
+epoch 85 loss 0.396
+train correct/all: 2337/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 146, 982, 369, 181, 100, 25]
+test correct/all: 1103/2228=0.50
+test f-score: macro: 0.28 micro: 0.50 weighted: 0.50, conv: 0.35
+epoch 86 loss 0.377
+train correct/all: 2336/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 981, 370, 182, 100, 25]
+test correct/all: 1090/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.50, conv: 0.35
+epoch 87 loss 0.350
+train correct/all: 2334/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 145, 981, 370, 183, 101, 24]
+test correct/all: 1088/2228=0.49
+test f-score: macro: 0.28 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 88 loss 0.355
+train correct/all: 2336/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 146, 982, 369, 181, 101, 25]
+test correct/all: 1096/2228=0.49
+test f-score: macro: 0.28 micro: 0.49 weighted: 0.50, conv: 0.35
+epoch 89 loss 0.338
+train correct/all: 2335/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 981, 370, 183, 100, 24]
+test correct/all: 1070/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 90 loss 0.308
+train correct/all: 2338/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 982, 369, 181, 100, 26]
+test correct/all: 1089/2228=0.49
+test f-score: macro: 0.28 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 91 loss 0.309
+train correct/all: 2338/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 981, 370, 180, 100, 27]
+test correct/all: 1068/2228=0.48
+test f-score: macro: 0.26 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 92 loss 0.289
+train correct/all: 2336/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 146, 982, 369, 182, 100, 24]
+test correct/all: 1079/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 93 loss 0.274
+train correct/all: 2339/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 982, 369, 180, 100, 27]
+test correct/all: 1076/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 94 loss 0.270
+train correct/all: 2336/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 981, 370, 182, 100, 25]
+test correct/all: 1080/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 95 loss 0.258
+train correct/all: 2338/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 145, 983, 368, 181, 101, 26]
+test correct/all: 1085/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 96 loss 0.251
+train correct/all: 2338/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 145, 982, 369, 180, 101, 27]
+test correct/all: 1060/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 97 loss 0.238
+train correct/all: 2339/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 124, 145, 984, 367, 181, 99, 26]
+test correct/all: 1082/2228=0.49
+test f-score: macro: 0.26 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 98 loss 0.222
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1067/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 99 loss 0.221
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1081/2228=0.49
+test f-score: macro: 0.26 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 100 loss 0.210
+train correct/all: 2339/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 982, 369, 180, 100, 27]
+test correct/all: 1060/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 101 loss 0.203
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 124, 145, 984, 367, 180, 99, 27]
+test correct/all: 1055/2228=0.47
+test f-score: macro: 0.26 micro: 0.47 weighted: 0.48, conv: 0.35
+epoch 102 loss 0.199
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 983, 368, 180, 100, 27]
+test correct/all: 1081/2228=0.49
+test f-score: macro: 0.28 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 103 loss 0.198
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 983, 368, 180, 100, 27]
+test correct/all: 1052/2228=0.47
+test f-score: macro: 0.26 micro: 0.47 weighted: 0.48, conv: 0.35
+epoch 104 loss 0.189
+train correct/all: 2338/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 983, 368, 180, 100, 27]
+test correct/all: 1073/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 105 loss 0.184
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1070/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 106 loss 0.171
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 983, 368, 180, 100, 27]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 107 loss 0.168
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1062/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 108 loss 0.157
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1085/2228=0.49
+test f-score: macro: 0.28 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 109 loss 0.163
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1094/2228=0.49
+test f-score: macro: 0.27 micro: 0.49 weighted: 0.49, conv: 0.35
+epoch 110 loss 0.154
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 983, 368, 180, 100, 27]
+test correct/all: 1078/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 111 loss 0.154
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1059/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 112 loss 0.147
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1055/2228=0.47
+test f-score: macro: 0.27 micro: 0.47 weighted: 0.48, conv: 0.35
+epoch 113 loss 0.139
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1063/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 114 loss 0.136
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 983, 368, 180, 100, 27]
+test correct/all: 1067/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 115 loss 0.139
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 145, 984, 367, 180, 101, 27]
+test correct/all: 1070/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 116 loss 0.134
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 983, 368, 180, 100, 27]
+test correct/all: 1061/2228=0.48
+test f-score: macro: 0.26 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 117 loss 0.124
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1063/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 118 loss 0.117
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 146, 984, 367, 180, 99, 27]
+test correct/all: 1066/2228=0.48
+test f-score: macro: 0.26 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 119 loss 0.119
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 120 loss 0.114
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1057/2228=0.47
+test f-score: macro: 0.27 micro: 0.47 weighted: 0.48, conv: 0.35
+epoch 121 loss 0.108
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 146, 984, 367, 180, 99, 27]
+test correct/all: 1065/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 122 loss 0.109
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1060/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 123 loss 0.109
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 124 loss 0.095
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1047/2228=0.47
+test f-score: macro: 0.27 micro: 0.47 weighted: 0.48, conv: 0.35
+epoch 125 loss 0.101
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1073/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 126 loss 0.098
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1066/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 127 loss 0.092
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1066/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 128 loss 0.094
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 122, 145, 984, 367, 180, 101, 27]
+test correct/all: 1067/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 129 loss 0.085
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1062/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 130 loss 0.086
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1059/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 131 loss 0.093
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1067/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 132 loss 0.087
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1062/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 133 loss 0.079
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 983, 368, 180, 100, 27]
+test correct/all: 1056/2228=0.47
+test f-score: macro: 0.27 micro: 0.47 weighted: 0.49, conv: 0.35
+epoch 134 loss 0.080
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1062/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 135 loss 0.081
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1079/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 136 loss 0.079
+train correct/all: 2340/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 124, 145, 984, 367, 180, 99, 27]
+test correct/all: 1058/2228=0.47
+test f-score: macro: 0.28 micro: 0.47 weighted: 0.49, conv: 0.35
+epoch 137 loss 0.075
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1067/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 138 loss 0.073
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1057/2228=0.47
+test f-score: macro: 0.27 micro: 0.47 weighted: 0.48, conv: 0.35
+epoch 139 loss 0.072
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1073/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 140 loss 0.067
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1060/2228=0.48
+test f-score: macro: 0.27 micro: 0.48 weighted: 0.48, conv: 0.35
+epoch 141 loss 0.066
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1066/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 142 loss 0.071
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1052/2228=0.47
+test f-score: macro: 0.26 micro: 0.47 weighted: 0.48, conv: 0.35
+epoch 143 loss 0.062
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1064/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 144 loss 0.060
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1043/2228=0.47
+test f-score: macro: 0.27 micro: 0.47 weighted: 0.48, conv: 0.35
+epoch 145 loss 0.065
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1046/2228=0.47
+test f-score: macro: 0.26 micro: 0.47 weighted: 0.48, conv: 0.35
+epoch 146 loss 0.063
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1070/2228=0.48
+test f-score: macro: 0.28 micro: 0.48 weighted: 0.49, conv: 0.35
+epoch 147 loss 0.064
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]
+test correct/all: 1050/2228=0.47
+test f-score: macro: 0.27 micro: 0.47 weighted: 0.48, conv: 0.35
+epoch 148 loss 0.058
+train correct/all: 2341/2342, dist: [416, 124, 145, 984, 367, 180, 99, 27] [416, 123, 145, 984, 367, 180, 100, 27]

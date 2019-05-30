@@ -5,6 +5,7 @@ import torch.autograd as autograd
 import torch.optim as optim
 from sklearn.metrics import f1_score
 from scipy.stats import pearsonr
+from torchviz import make_dot
 
 import numpy as np
 
@@ -177,6 +178,7 @@ criterion = nn.CrossEntropyLoss().to(device)
 #optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
 optimizer = optim.Adam(model.parameters(), lr=1e-4)
 
+printGraph = False
 def print_accuracy():
     # on training set
     correct = 0
@@ -186,6 +188,12 @@ def print_accuracy():
     for data in input_data:
         inputs, labels = data
         outputs = model(inputs)
+
+        global printGraph
+        if printGraph:
+            file = open('graph.dot', 'w')
+            file.write(str(make_dot(outputs, params=dict(model.named_parameters()))))
+            printGraph = False
 
         input_ans = labels
         output_ans = np.argmax(list(outputs))
