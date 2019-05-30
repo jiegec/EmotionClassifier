@@ -93,9 +93,9 @@ for i in range(0, len(data), batch_size):
 
 print('got', len(data), 'news and', len(vocab), 'words')
 
-class CNN(nn.Module):
+class CNNV1(nn.Module):
     def __init__(self):
-        super(CNN, self).__init__()
+        super(CNNV1, self).__init__()
         self.embedding = nn.Embedding(vocab_size, 256).to(device)
         self.conv1 = nn.Conv1d(256, 64, 20).to(device)
         self.conv2 = nn.Conv1d(256, 64, 10).to(device)
@@ -137,7 +137,37 @@ class CNN(nn.Module):
         x = self.linear(x)[0]
         return x
 
-model = CNN()
+class RNNV1(nn.Module):
+    def __init__(self):
+        super(RNNV1, self).__init__()
+        self.embedding = nn.Embedding(vocab_size, 256).to(device)
+        self.lstm = nn.LSTM(max_words, 16, 5).to(device)
+        self.dropout = nn.Dropout(0.7).to(device)
+        self.linear = nn.Linear(32 * 128, num_emotions).to(device)
+
+        nn.init.xavier_uniform(self.embedding.weight)
+        nn.init.xavier_uniform(self.linear.weight)
+
+    def forward(self, da):
+        hidden = (torch.tensor(np.zeros((5, 256, 16)), dtype=torch.float).to(device), torch.tensor(np.zeros((5, 256, 16)), dtype=torch.float).to(device))
+        for word in da:
+            x = self.embedding(word)
+            #print(x.size())
+            x = torch.stack([x])
+            #print(x.size())
+            x = x.permute(0, 2, 1)
+            #print(x.size())
+            x, hidden = self.lstm(x, hidden)
+            #print(x.size())
+            x = F.relu(self.dropout(x))
+            #print(x.size())
+            x = x.view(1, -1)
+            #print(x.size())
+            x = self.linear(x)[0]
+        return x
+
+#model = CNNV1()
+model = RNNV1()
 criterion = nn.CrossEntropyLoss().to(device)
 #criterion = nn.CrossEntropyLoss(weight=torch.tensor(max_vote_count, dtype=torch.float)).to(device)
 #optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
@@ -188,7 +218,7 @@ def print_accuracy():
 
 print("before training")
 print_accuracy()
-for epoch in range(1000):
+for epoch in range(100):
     total_loss = 0.0
     for data in batch_input_data:
         inputs, labels = data
