@@ -3,6 +3,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.autograd as autograd
 import torch.optim as optim
+from sklearn.metrics import f1_score
+from scipy.stats import pearsonr
 
 import numpy as np
 
@@ -62,17 +64,19 @@ for line in test_file:
 
     max_vote = 0
     votes = []
+    vote_sum = 0.0
     for i in range(num_emotions):
         num = int(parts[i + 2][3:])
         votes.append(num)
-    max_vote = np.argmax(votes)
+        vote_sum += num
+    labels = np.array(votes, dtype=np.float) / vote_sum
     words = [0] * max_words
     words_len = 0
     for i in range(2 + num_emotions, len(parts)):
         if parts[i] in vocab_set:
             words[words_len] = vocab_map[parts[i]]
             words_len += 1
-    test_data.append((torch.tensor([words], dtype=torch.long).to(device), torch.tensor(max_vote, dtype=torch.long)))
+    test_data.append((torch.tensor([words], dtype=torch.long).to(device), torch.tensor(labels, dtype=torch.float)))
 
 batch_size = 256
 batch_input_data = []
@@ -200,12 +204,20 @@ def print_accuracy():
     # on test set
     correct = 0
     wrong = 0
+    truth = [0] * num_emotions
+    pred = [0] * num_emotions
+    convs = []
     for data in test_data:
         inputs, labels = data
         outputs = model(inputs)
 
-        input_ans = labels
+        input_ans = np.argmax(list(labels))
         output_ans = np.argmax(list(outputs))
+
+        truth[input_ans] += 1
+        pred[output_ans] += 1
+
+        convs.append(pearsonr(np.array(list(labels), dtype=np.float), np.array(list(outputs), dtype=np.float)))
 
         #print('expected %d, got %d %s' % (input_ans, output_ans, outputs.tolist()))
         if input_ans == output_ans:
@@ -213,7 +225,8 @@ def print_accuracy():
         else:
             wrong += 1
 
-    print('test correct/all: %d/%d' % (correct, correct + wrong))
+    print('test correct/all: %d/%d=%.2f' % (correct, correct + wrong, correct / (correct + wrong)))
+    print('test f-score: macro: %.2f micro: %.2f weighted: %.2f, conv: %.2f' % (f1_score(truth, pred, average='macro'), f1_score(truth, pred, average='micro'), f1_score(truth, pred, average='weighted'), np.mean(convs)))
 
 
 print("before training")
