@@ -171,14 +171,42 @@ class RNNV1(nn.Module):
             x = self.linear(x)[0]
         return x
 
+class MLPV1(nn.Module):
+    def __init__(self):
+        super(MLPV1, self).__init__()
+        self.embedding = nn.Embedding(vocab_size, 256).to(device)
+        self.linear1 = nn.Linear(1024 * 1024, 64).to(device)
+        self.linear2 = nn.Linear(64, 64).to(device)
+        self.linear3 = nn.Linear(64, 64).to(device)
+        self.linear4 = nn.Linear(64, 64).to(device)
+        self.linear5 = nn.Linear(64, 64).to(device)
+        self.linear6 = nn.Linear(64, num_emotions).to(device)
+
+        nn.init.xavier_uniform(self.linear1.weight)
+        nn.init.xavier_uniform(self.linear2.weight)
+        nn.init.xavier_uniform(self.linear3.weight)
+        nn.init.xavier_uniform(self.linear4.weight)
+        nn.init.xavier_uniform(self.linear5.weight)
+        nn.init.xavier_uniform(self.linear6.weight)
+
+    def forward(self, x):
+        x = self.embedding(x).view(1, -1)
+        x = F.relu(self.linear1(x))
+        x = F.relu(self.linear2(x))
+        x = F.relu(self.linear3(x))
+        x = F.relu(self.linear4(x))
+        x = F.relu(self.linear5(x))
+        x = F.relu(self.linear6(x))[0]
+        return x
+
 #model = CNNV1()
-model = CNNV1()
+model = MLPV1()
 criterion = nn.CrossEntropyLoss().to(device)
 #criterion = nn.CrossEntropyLoss(weight=torch.tensor(max_vote_count, dtype=torch.float)).to(device)
 #optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
 optimizer = optim.Adam(model.parameters(), lr=1e-4)
 
-printGraph = False
+printGraph = True
 def print_accuracy():
     # on training set
     correct = 0
@@ -214,7 +242,7 @@ def print_accuracy():
     wrong = 0
     truth = []
     pred = []
-    convs = []
+    covs = []
     for data in test_data:
         inputs, labels = data
         outputs = model(inputs)
@@ -225,7 +253,7 @@ def print_accuracy():
         truth.append(input_ans)
         pred.append(output_ans)
 
-        convs.append(pearsonr(np.array(list(labels), dtype=np.float), np.array(list(outputs), dtype=np.float)))
+        covs.append(pearsonr(np.array(list(labels), dtype=np.float), np.array(list(outputs), dtype=np.float)))
 
         #print('expected %d, got %d %s' % (input_ans, output_ans, outputs.tolist()))
         if input_ans == output_ans:
@@ -234,7 +262,7 @@ def print_accuracy():
             wrong += 1
 
     print('test correct/all: %d/%d=%.2f' % (correct, correct + wrong, correct / (correct + wrong)))
-    print('test f-score: macro: %.2f micro: %.2f weighted: %.2f, conv: %.2f' % (f1_score(truth, pred, average='macro'), f1_score(truth, pred, average='micro'), f1_score(truth, pred, average='weighted'), np.mean(convs)))
+    print('test f-score: macro: %.2f micro: %.2f weighted: %.2f, cov: %.2f' % (f1_score(truth, pred, average='macro'), f1_score(truth, pred, average='micro'), f1_score(truth, pred, average='weighted'), np.mean(covs)))
 
     sys.stdout.flush()
 
