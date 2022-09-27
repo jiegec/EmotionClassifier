@@ -70,7 +70,7 @@ for line in test_file:
         num = int(parts[i + 2][3:])
         votes.append(num)
         vote_sum += num
-    labels = np.array(votes, dtype=np.float) / vote_sum
+    labels = np.array(votes, dtype=np.float64) / vote_sum
     words = [0] * max_words
     words_len = 0
     for i in range(2 + num_emotions, len(parts)):
@@ -215,7 +215,7 @@ def print_accuracy():
     output_dist = [0] * num_emotions
     for data in input_data:
         inputs, labels = data
-        outputs = model(inputs)
+        outputs = model(inputs).cpu()
 
         global printGraph
         if printGraph:
@@ -224,7 +224,7 @@ def print_accuracy():
             printGraph = False
 
         input_ans = labels
-        output_ans = np.argmax(list(outputs))
+        output_ans = np.argmax(list(outputs.detach()))
 
         input_dist[input_ans] += 1
         output_dist[output_ans] += 1
@@ -245,15 +245,16 @@ def print_accuracy():
     covs = []
     for data in test_data:
         inputs, labels = data
-        outputs = model(inputs)
+        outputs = model(inputs).cpu().detach()
 
+        labels = labels.cpu()
         input_ans = np.argmax(list(labels))
         output_ans = np.argmax(list(outputs))
 
         truth.append(input_ans)
         pred.append(output_ans)
 
-        covs.append(pearsonr(np.array(list(labels), dtype=np.float), np.array(list(outputs), dtype=np.float)))
+        covs.append(pearsonr(np.array(list(labels), dtype=np.float64), np.array(list(outputs), dtype=np.float64)))
 
         #print('expected %d, got %d %s' % (input_ans, output_ans, outputs.tolist()))
         if input_ans == output_ans:
